@@ -1,0 +1,117 @@
+.overlay{
+    background: var(--modal);
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: var(--white);
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.05);
+    text-align: center;
+    position: relative;
+}
+
+.container header{
+    font-size: 8.75rem;
+    font-weight: 600;
+    color: var(--blue);
+    background: url('/icons/levelup.svg') no-repeat center;
+    background-size: contain;
+}
+
+.container strong{
+    font-size: 2.25rem;
+    color: var(--title);
+}
+
+.container p{
+    font-size: 1.25;
+    color: var(--text);
+    margin-top: 0.25;
+}
+
+.closeButton{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background: transparent;
+    border:0;
+    font-size: 0;
+}
+
+.plantTextField {
+    height: 3rem;
+    border: none;
+    background: var(--field);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    color: var(--title);
+}
+
+.newPlantForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plantTextButton {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:0;
+    border-radius: 5px;
+
+    color: var(--white);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: filter 0.2s;
+    outline: none;
+    background: var(--blue);
+}
+
+
+.plantTextButton:hover {
+    filter:brightness(0.9);
+}
+
+.plantsImages {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.plantsImages button {
+    height: 200px;
+    width: 200px;
+    background: var(--field);
+    border-radius: 8px;
+    border: none;
+    border: 3px solid var(--shadow);
+}
+
+.plantsImages button:hover{
+    filter:brightness(0.95);
+}
+
+.plantsImages button img{
+    height: 150px;
+    width: 150px;
+}

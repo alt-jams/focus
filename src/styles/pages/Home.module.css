@@ -1,0 +1,80 @@
+.container{
+    height: 85vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 3rem 0 3rem;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.container section{
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+}
+
+.logoTitle {
+    color: var(--blue);
+}
+
+
+@media (max-width: 600px){
+    .container section{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        padding-bottom: 4rem;
+    }
+
+}
+
+.plantsContainer {
+    text-align: center;
+    margin: 4rem;
+    margin-top: 8rem;
+}
+
+.plantsContainer h2 {
+    margin: 4rem;
+}
+
+.plantItem {
+    margin-bottom: 2rem;
+}
+
+.plantList {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.imageBg {
+    background: var(--plants);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.imageBg img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
